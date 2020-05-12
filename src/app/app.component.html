@@ -1,0 +1,5 @@
+<div id="overlay" *ngIf="isLoading$ | async">*ngIf Is Loading</div>
+<div class="page-content" [class.inactive]="isLoading$ | async">
+  Is Loading but with red
+
+</div>
